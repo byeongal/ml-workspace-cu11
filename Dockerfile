@@ -18,5 +18,6 @@ ENV WORKSPACE_HOME="/workspace"
 WORKDIR $WORKSPACE_HOME
 
 COPY start.sh /scripts/start.sh
+COPY code.ipynb /workspace/code.ipynb
 RUN ["chmod", "+x", "/scripts/start.sh"]
 ENTRYPOINT "/scripts/start.sh"
